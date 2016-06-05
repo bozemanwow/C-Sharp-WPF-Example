@@ -1,0 +1,29 @@
+﻿<Window x:Class="WpfExample.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfExample"
+        mc:Ignorable="d"
+        Title="C# Example" Height="350" Width="525">
+    <Grid>
+        <ComboBox x:Name="comboBoxCalSelect" HorizontalAlignment="Left" Margin="168,46,0,0" VerticalAlignment="Top" Width="125" SelectionChanged="comboBoxCalSelect_SelectionChanged" >
+            <ComboBoxItem Content="Base CalCulator"/>
+            <ComboBoxItem Content="Child CalCulator"/>
+        </ComboBox>
+        <Button x:Name="buttonAdd" Content="+" HorizontalAlignment="Left" Margin="131,98,0,0" VerticalAlignment="Top" Width="60"
+                 Click="buttonAdd_Click"/>
+        <Button x:Name="buttonSubtract" Content="-" HorizontalAlignment="Left" Margin="131,73,0,0" VerticalAlignment="Top" Width="60" RenderTransformOrigin="-0.184,0.626"
+                Click="buttonSubtract_Click"/>
+        <Label x:Name="labelNumOne" Content="0" HorizontalAlignment="Left" Margin="234,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="labelNumTwo" Content="0" HorizontalAlignment="Left" Margin="234,113,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.269,1.624"/>
+        <ScrollBar x:Name="scrollBarOne" HorizontalAlignment="Left" Margin="276,73,0,0" VerticalAlignment="Top" Scroll="scrollBarUpDownButtons" />
+        <ScrollBar x:Name="scrollBarTwo" HorizontalAlignment="Left" Margin="276,107,0,0" VerticalAlignment="Top" Scroll="scrollBarUpDownButtons"/>
+        <Label x:Name="labelTotal" Content="0" HorizontalAlignment="Left" Margin="234,166,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label" Content="Calculator Type" HorizontalAlignment="Left" Margin="312,46,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label1" Content="Total" HorizontalAlignment="Left" Margin="131,166,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label2" Content="First Value" HorizontalAlignment="Left" Margin="312,73,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label3" Content="Second Value" HorizontalAlignment="Left" Margin="312,113,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>
